@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @unit.tipo %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @unit.user_id %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @unit.address_id %>
+</p>
+
+<p>
+  <strong>Commune:</strong>
+  <%= @unit.commune_id %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @unit.city_id %>
+</p>
+
+<p>
+  <strong>Region:</strong>
+  <%= @unit.region_id %>
+</p>
+
+<p>
+  <strong>Zip code:</strong>
+  <%= @unit.zip_code_id %>
+</p>
+
+<%= link_to 'Edit', edit_unit_path(@unit) %> |
+<%= link_to 'Back', units_path %>

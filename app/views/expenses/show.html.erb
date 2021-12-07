@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fecha gasto:</strong>
+  <%= @expense.fecha_gasto %>
+</p>
+
+<p>
+  <strong>Monto:</strong>
+  <%= @expense.monto %>
+</p>
+
+<p>
+  <strong>Motive:</strong>
+  <%= @expense.motive_id %>
+</p>
+
+<p>
+  <strong>Month:</strong>
+  <%= @expense.month_id %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @expense.year_id %>
+</p>
+
+<p>
+  <strong>Document:</strong>
+  <%= @expense.document_id %>
+</p>
+
+<%= link_to 'Edit', edit_expense_path(@expense) %> |
+<%= link_to 'Back', expenses_path %>

@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rut: MyString
+  nombre: MyString
+  apellido: MyString
+  correo: MyString
+  supplier_type: one
+  phone: one
+
+two:
+  rut: MyString
+  nombre: MyString
+  apellido: MyString
+  correo: MyString
+  supplier_type: two
+  phone: two

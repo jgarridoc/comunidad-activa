@@ -1,0 +1,2 @@
+class SupplierType < ApplicationRecord
+end

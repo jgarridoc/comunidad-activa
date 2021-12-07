@@ -1,0 +1,22 @@
+<%= form_with(model: motive) do |form| %>
+  <% if motive.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(motive.errors.count, "error") %> prohibited this motive from being saved:</h2>
+
+      <ul>
+        <% motive.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :motivo %>
+    <%= form.text_field :motivo %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fecha_gasto: 2021-12-06
+  monto: 1
+  motive: one
+  month: one
+  year: one
+  document: one
+
+two:
+  fecha_gasto: 2021-12-06
+  monto: 1
+  motive: two
+  month: two
+  year: two
+  document: two

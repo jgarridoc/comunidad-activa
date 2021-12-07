@@ -1,0 +1,52 @@
+<%= form_with(model: unit) do |form| %>
+  <% if unit.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(unit.errors.count, "error") %> prohibited this unit from being saved:</h2>
+
+      <ul>
+        <% unit.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :tipo %>
+    <%= form.text_field :tipo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address_id %>
+    <%= form.text_field :address_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :commune_id %>
+    <%= form.text_field :commune_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city_id %>
+    <%= form.text_field :city_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :region_id %>
+    <%= form.text_field :region_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :zip_code_id %>
+    <%= form.text_field :zip_code_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

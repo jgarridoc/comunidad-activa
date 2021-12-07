@@ -1,0 +1,22 @@
+<%= form_with(model: document_type) do |form| %>
+  <% if document_type.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(document_type.errors.count, "error") %> prohibited this document_type from being saved:</h2>
+
+      <ul>
+        <% document_type.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :tipo_documento %>
+    <%= form.text_field :tipo_documento %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

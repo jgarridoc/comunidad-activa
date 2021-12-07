@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  monto_pago: MyString
+  saldo_acumulado: 1
+  fecha_pago: 2021-12-06
+  total_pago: 1
+  payment_method: one
+  user: one
+  motive: one
+  month: one
+  year: one
+
+two:
+  monto_pago: MyString
+  saldo_acumulado: 1
+  fecha_pago: 2021-12-06
+  total_pago: 1
+  payment_method: two
+  user: two
+  motive: two
+  month: two
+  year: two

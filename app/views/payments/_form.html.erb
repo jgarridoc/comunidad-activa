@@ -1,0 +1,62 @@
+<%= form_with(model: payment) do |form| %>
+  <% if payment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(payment.errors.count, "error") %> prohibited this payment from being saved:</h2>
+
+      <ul>
+        <% payment.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :monto_pago %>
+    <%= form.text_field :monto_pago %>
+  </div>
+
+  <div class="field">
+    <%= form.label :saldo_acumulado %>
+    <%= form.number_field :saldo_acumulado %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fecha_pago %>
+    <%= form.date_select :fecha_pago %>
+  </div>
+
+  <div class="field">
+    <%= form.label :total_pago %>
+    <%= form.number_field :total_pago %>
+  </div>
+
+  <div class="field">
+    <%= form.label :payment_method_id %>
+    <%= form.text_field :payment_method_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :motive_id %>
+    <%= form.text_field :motive_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :month_id %>
+    <%= form.text_field :month_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_id %>
+    <%= form.text_field :year_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
